@@ -1,0 +1,95 @@
+.weather_main_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
+}
+
+.formSearchCity {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  height: 30px;
+  width: 90%;
+}
+
+.formSearchCity input {
+  width: 75%;
+  border-radius: 5px;
+}
+
+.formSearchCity button {
+  width: 25%;
+  border-radius: 5px;
+}
+
+.weather_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.weather_icon_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+.weather_icon{
+  width: 80px;
+}
+
+.weather_info{
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.weather_maintemperature{
+  color: white;
+  font-size: 60px;
+  align-self: center;
+}
+
+.weather_flt_container{
+  align-self: flex-end;
+}
+
+.weather_flt_container p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.weather_feelsliketemperature{
+  color: white;
+  font-size: 20px;
+}
+
+.loading-logo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-logo{
+  width: 150px;
+  margin: 200px auto;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
