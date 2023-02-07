@@ -29,7 +29,7 @@ export const WeatherApp = () => {
       }
     }
     loadWeather();
-  }, [city])
+  }, [city]);
 
   useEffect(() => {
     weatherData 
