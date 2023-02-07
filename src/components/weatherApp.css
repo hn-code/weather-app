@@ -1,10 +1,11 @@
 .weather_main_container {
-  width: 100%;
+  width: 100vw;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 20px;
+  height: 100vh;
 }
 
 .formSearchCity {
@@ -32,12 +33,21 @@
   width: 100%;
 }
 
+.weather_city{
+  color: white;
+  margin: 0px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .weather_icon_text{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  font-size: 25px;
+  font-size: 1.2rem;
+  max-width: 30%;
+  text-align: center;
 }
 
 .weather_icon{
@@ -55,7 +65,7 @@
 
 .weather_maintemperature{
   color: white;
-  font-size: 60px;
+  font-size: 3rem;
   align-self: center;
 }
 
@@ -71,6 +81,14 @@
 .weather_feelsliketemperature{
   color: white;
   font-size: 20px;
+}
+
+.weather_map{
+  margin-top: 2vh;
+  width: 80vw;
+  max-width: 450px;
+  height: 80vw;
+  max-height: 450px;
 }
 
 .loading-logo_container {

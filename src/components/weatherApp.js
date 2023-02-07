@@ -9,6 +9,12 @@ export const WeatherApp = () => {
   const [cityWrited, setCityWrited] = useState('');
   const [city, setCity] = useState("Maldonado");
 
+  useEffect(()=>{
+    const cityPreSearched = sessionStorage.getItem("cityWrited")
+    if(cityPreSearched){
+      setCity(cityPreSearched);
+    }
+  },[])
 
   useEffect(() => {
     const loadWeather = async () => {
@@ -40,6 +46,7 @@ export const WeatherApp = () => {
 
   const searchCity = (e) => {
     e.preventDefault();
+    sessionStorage.setItem("cityWrited", cityWrited)
     setCity(cityWrited);
   }
 
