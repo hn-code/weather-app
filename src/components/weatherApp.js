@@ -11,7 +11,7 @@ export const WeatherApp = () => {
 
   useEffect(()=>{
     const cityPreSearched = sessionStorage.getItem("cityWrited")
-    if(cityPreSearched){
+    if(cityPreSearched && cityPreSearched.toLocaleLowerCase !== "maldonado"){
       setCity(cityPreSearched);
     }
   },[])
